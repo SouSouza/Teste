@@ -1,0 +1,32 @@
+:root{
+    /* Parameters for all pages */
+        /* Character configuration */
+        --DefaultTextColor: #000000;
+
+        /* Color configuration */
+        --DefaultPageBackgroundColor: #ffffff;
+
+        /* Measurement Configuration */
+        --DefaultMarginSetting: 0;
+        --DefaultEdgeThickness: 0;
+        --DefaultPaddingSetting: 0;
+}
+
+/* normalize.css */
+html, body, section, header, footer, nav,
+h1, h2, h3, h4, h5, h6,
+p, a, ol, li, ul
+    {
+        margin: var(--DefaultMarginSetting);
+        border: var(--DefaultEdgeThickness);
+        padding: var(--DefaultPaddingSetting);
+        box-sizing: border-box;
+        color: var(--DefaultTextColor);
+        text-decoration: none;
+        list-style: none;
+}
+
+body
+    {
+        overflow: hidden;
+}
