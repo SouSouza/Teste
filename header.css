@@ -1,0 +1,98 @@
+header
+    {
+        background: var(--header-heroBanner-imagem_de_fundo);
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: none;
+}
+
+/* header nav */
+header nav
+    {
+        height: 40vh;
+        min-height: 70px;
+        max-height: 80px;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--header-nav-cor_de_fundo_do_nav);
+        position: fixed;
+}
+
+header nav a
+    {
+        color: var(--header-nav-cor_do_texto_do_nav);
+        font-family: var(--header-nav-fonte_do_texto);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: var(--header-nav-tamanho_do_texto);
+}
+
+header nav div.menu-hamburguer
+    {
+        display: none;
+}
+
+ /* header div.hero-banner */
+header div.hero-banner
+    {   
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: var(--header-heroBanner-cor_da_frente_da_imagem);
+        padding-left: var(--header-heroBanner-margin-lateral);
+ }
+
+header div.hero-banner div.info-hero
+    {
+        width: 50vw;
+        max-width: 550px;
+        min-width: 250px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 25px;
+}
+
+header div.hero-banner div.info-hero h2
+    {   
+        margin-top: 150px;
+        font-size: var(--header-heroBanner-tamanho_do_titulo);
+        text-transform: uppercase;
+        font-family: var(--header-heroBanner-fonte_do_titulo);
+        color: var(--header-heroBanner_cor_do_texto);
+        transition: .1s font-size;
+}
+
+header div.hero-banner div.info-hero p
+    {
+        color: var(--header-heroBanner_cor_do_texto);
+        font-size: var(--header-heroBanner-tamanho_do_texto);
+        font-family: var(--header-heroBanner-fonte_do_texto);
+        transition: .1s font-size;
+}
+
+header div.hero-banner div.info-hero button
+    {
+        height: var(--header-heroBanner-altura_do_botao);
+        width: var(--header-heroBanner-largura_do_botao);
+        margin-top: var(--header-heroBanner-distancia_do_botao_para_o_paragrafo);
+        background-color: var(--header-heroBanner-cor_do_fundo_do_botao_sem_destaque);
+        border: var(--header-heroBanner-grossura_da_borda_do_botao) var(--header-heroBanner-cor_da_borda_do_botao_sem_destaque) solid;
+        border-radius: var(--header-heroBanner-arredondamento_da_borda);
+        color: var(--header-heroBanner-cor_do_texto_do_botao_sem_destaque);
+        font-size: var(--header-heroBanner-tamanho_do_texto_do_botao);
+        font-family: var(--header-heroBanner-fonte_do_botao);
+        cursor: pointer;
+        transition: .5s background-color, .5s border;
+}
+
+header div.hero-banner div.info-hero button:hover
+    {
+        background-color: var(--header-heroBanner-cor_do_fundo_do_botao_com_destaque);
+        border: var(--header-heroBanner-grossura_da_borda_do_botao) var(--header-heroBanner-cor_da_borda_do_botao_com_destaque) solid;
+        color: var(--header-heroBanner-cor_do_texto_do_botao_com_destaque);
+}
